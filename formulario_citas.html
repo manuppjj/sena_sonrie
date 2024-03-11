@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Citas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registrar Cita</h2>
+        <form action="guardar_cita.php" method="POST">
+            <label for="nombre">Nombre del Paciente:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido">Apellido del Paciente:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="fecha">Fecha de la Cita:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora de la Cita:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="odontologo">Odontólogo:</label>
+            <select id="odontologo" name="odontologo" required>
+                <option value="Dr. Pérez">Dr. Pérez</option>
+                <option value="Dra. Gómez">Dra. Gómez</option>
+                <!-- Agregar más opciones según los odontólogos disponibles -->
+            </select>
+
+            <button type="submit">Guardar Cita</button>
+        </form>
+    </div>
+</body>
+</html>
